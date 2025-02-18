@@ -33,6 +33,7 @@ function App() {
     </div>
     <p>¿Quisieras agregar otro producto?</p>
     <input value={nuevoProducto.nombre} onChange={e => setNuevoProducto({...nuevoProducto, nombre: e.target.value})} type="text" />
+    <input value={nuevoProducto.precio} onChange={e => setNuevoProducto({...nuevoProducto, precio: Number(e.target.value)})} type="text" />
     <button onClick={ ()=> agregarProducto()}>Agregar</button>
     <p>{sumando}</p>
     <button onClick={sumaBoton}>Suma</button>
